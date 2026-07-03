@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OrthoNow | Expert Orthopaedic Consultation</title>
+
+<meta name="description" content="Book an expert orthopaedic consultation at OrthoNow for knee and back pain.">
+
+<style>
+
+:root{
+
+--primary:#0A7C66;
+--primary-dark:#076452;
+--secondary:#F3F9F7;
+--text:#1F2937;
+--gray:#6B7280;
+--border:#E5E7EB;
+--white:#ffffff;
+--shadow:0 12px 30px rgba(0,0,0,.08);
+--radius:18px;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Arial,
+sans-serif;
+
+background:#F8FAFB;
+color:var(--text);
+line-height:1.6;
+
+}
+
+.container{
+
+width:min(1120px,92%);
+margin:auto;
+
+}
+
+.hero{
+
+padding:60px 0;
+
+}
+
+.hero-grid{
+
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:60px;
+align-items:center;
+
+}
+
+.badge{
+
+display:inline-block;
+background:#DDF7EF;
+color:var(--primary);
+padding:8px 14px;
+border-radius:999px;
+font-size:14px;
+font-weight:700;
+margin-bottom:20px;
+
+}
+
+h1{
+
+font-size:clamp(2.2rem,5vw,3.7rem);
+line-height:1.1;
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+font-size:1.1rem;
+color:var(--gray);
+max-width:620px;
+margin-bottom:28px;
+
+}
+
+.benefits{
+
+display:grid;
+gap:18px;
+margin-bottom:36px;
+
+}
+
+.benefit{
+
+display:flex;
+align-items:flex-start;
+gap:14px;
+
+}
+
+.icon{
+
+width:34px;
+height:34px;
+background:#DDF7EF;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+color:var(--primary);
+flex-shrink:0;
+
+}
+
+.trust{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+
+}
+
+.trust-card{
+
+background:white;
+padding:18px;
+border-radius:14px;
+box-shadow:var(--shadow);
+text-align:center;
+
+}
+
+.trust-card h3{
+
+font-size:1.6rem;
+color:var(--primary);
+margin-bottom:6px;
+
+}
+
+.form-card{
+
+background:white;
+padding:34px;
+border-radius:20px;
+box-shadow:var(--shadow);
+position:relative;
+
+}
+
+.form-card h2{
+
+font-size:1.7rem;
+margin-bottom:8px;
+
+}
+
+.form-card p{
+
+color:var(--gray);
+margin-bottom:24px;
+
+}
+
+label{
+
+display:block;
+font-weight:600;
+margin-bottom:8px;
+
+}
+
+input{
+
+width:100%;
+padding:15px;
+font-size:16px;
+border:1px solid var(--border);
+border-radius:12px;
+margin-bottom:18px;
+transition:.25s;
+
+}
+
+input:focus{
+
+outline:none;
+border-color:var(--primary);
+
+}
+
+button{
+
+width:100%;
+padding:17px;
+border:none;
+border-radius:12px;
+background:var(--primary);
+color:white;
+font-size:17px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:var(--primary-dark);
+
+}
+
+.note{
+
+margin-top:14px;
+text-align:center;
+font-size:.85rem;
+color:var(--gray);
+
+}
+
+.error{
+
+display:none;
+font-size:.9rem;
+color:#D32F2F;
+margin-bottom:15px;
+
+}
+
+.success{
+
+display:none;
+text-align:center;
+padding:45px 20px;
+
+}
+
+.success h2{
+
+color:var(--primary);
+margin-bottom:12px;
+
+}
+
+.success p{
+
+color:var(--gray);
+
+}
+
+footer{
+
+margin-top:60px;
+padding:30px;
+text-align:center;
+font-size:.9rem;
+color:var(--gray);
+
+}
+
+.sticky-cta{
+
+display:none;
+
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+gap:35px;
+
+}
+
+.trust{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding:35px 0 100px;
+
+}
+
+.sticky-cta{
+
+display:block;
+position:fixed;
+left:0;
+right:0;
+bottom:0;
+background:white;
+padding:12px;
+box-shadow:0 -5px 20px rgba(0,0,0,.08);
+
+}
+
+.sticky-cta button{
+
+margin:0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="badge">
+Trusted Orthopaedic Care in Bengaluru
+</div>
+
+<h1>
+Knee or Back Pain Making Your Workday Difficult?
+</h1>
+
+<p class="subtitle">
+
+Get an expert orthopaedic opinion from experienced specialists at OrthoNow.
+Book your consultation today and take the first step toward lasting pain relief.
+
+</p>
+
+<div class="benefits">
+
+<div class="benefit">
+<div class="icon">✓</div>
+<div>
+<strong>Same-week appointments</strong><br>
+Skip long waiting periods and consult quickly.
+</div>
+</div>
+
+<div class="benefit">
+<div class="icon">✓</div>
+<div>
+<strong>Experienced specialists</strong><br>
+Focused diagnosis for knee, back and joint pain.
+</div>
+</div>
+
+<div class="benefit">
+<div class="icon">✓</div>
+<div>
+<strong>Convenient for working professionals</strong><br>
+Fast scheduling with minimal waiting time.
+</div>
+</div>
+
+</div>
+
+<div class="trust">
+
+<div class="trust-card">
+<h3>4.8★</h3>
+<p>Average Patient Rating</p>
+</div>
+
+<div class="trust-card">
+<h3>25+</h3>
+<p>Orthopaedic Specialists</p>
+</div>
+
+<div class="trust-card">
+<h3>15K+</h3>
+<p>Consultations Completed</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="form-card">
+
+<div id="formSection">
+
+<h2>
+Book Your Consultation
+</h2>
+
+<p>
+Our care coordinator will call you shortly.
+</p>
+
+<div id="error" class="error"></div>
+
+<form id="consultationForm">
+
+<label>Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="10-digit mobile number"
+required>
+<button type="submit" id="submitBtn">
+    Book Consultation
+</button>
+
+</form>
+
+<p class="note">
+Your information is secure and will only be used to schedule your consultation.
+</p>
+
+</div>
+
+<!-- Thank You State -->
+
+<div id="successSection" class="success">
+
+<div style="font-size:60px;margin-bottom:15px;">
+✅
+</div>
+
+<h2>
+Thank You!
+</h2>
+
+<p>
+
+Your consultation request has been received successfully.
+
+<br><br>
+
+One of our care coordinators will contact you shortly to confirm your appointment.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 OrthoNow. All Rights Reserved.
+
+</footer>
+
+<!-- Mobile Sticky CTA -->
+
+<div class="sticky-cta">
+
+<button id="scrollBtn">
+
+Book Consultation
+
+</button>
+
+</div>
+
+<script>
+
+/*
+-------------------------------------------------------
+Create dataLayer if GTM is not loaded.
+This prevents JavaScript errors.
+-------------------------------------------------------
+*/
+
+window.dataLayer = window.dataLayer || [];
+
+/*
+-------------------------------------------------------
+DOM Elements
+-------------------------------------------------------
+*/
+
+const form = document.getElementById("consultationForm");
+
+const formSection = document.getElementById("formSection");
+
+const successSection = document.getElementById("successSection");
+
+const errorBox = document.getElementById("error");
+
+const scrollBtn = document.getElementById("scrollBtn");
+
+/*
+-------------------------------------------------------
+Sticky CTA Scroll
+-------------------------------------------------------
+*/
+
+scrollBtn.addEventListener("click", () => {
+
+document.querySelector(".form-card")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+});
+
+/*
+-------------------------------------------------------
+Phone Validation
+-------------------------------------------------------
+*/
+
+function isValidPhone(phone){
+
+const regex = /^[6-9]\d{9}$/;
+
+return regex.test(phone);
+
+}
+
+/*
+-------------------------------------------------------
+Form Submit
+-------------------------------------------------------
+*/
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+errorBox.style.display="none";
+
+const name =
+document.getElementById("name").value.trim();
+
+const phone =
+document.getElementById("phone").value.trim();
+
+/*
+Basic Validation
+*/
+
+if(name.length < 2){
+
+errorBox.innerHTML="Please enter your full name.";
+
+errorBox.style.display="block";
+
+return;
+
+}
+
+if(!isValidPhone(phone)){
+
+errorBox.innerHTML="Please enter a valid 10-digit mobile number.";
+
+errorBox.style.display="block";
+
+return;
+
+}
+
+/*
+-----------------------------------------------
+GTM Event Push
+-----------------------------------------------
+*/
+
+const eventData = {
+
+event:"consultation_form_submitted",
+
+form_name:"orthonow_landing_page",
+
+user_name:name,
+
+phone_length:phone.length,
+
+city:"Bengaluru",
+
+page_location:window.location.href,
+
+timestamp:new Date().toISOString()
+
+};
+
+window.dataLayer.push(eventData);
+/*
+-------------------------------------------------------
+Console Output
+(Useful during interview to prove GTM event fired)
+-------------------------------------------------------
+*/
+
+console.log("✅ GTM Event Fired");
+console.log(eventData);
+
+console.log("Current dataLayer:");
+console.log(window.dataLayer);
+
+/*
+-------------------------------------------------------
+Show Thank You State
+(No page reload)
+-------------------------------------------------------
+*/
+
+formSection.style.display = "none";
+successSection.style.display = "block";
+
+/*
+Optional:
+Reset form for future submissions.
+*/
+
+form.reset();
+
+});
+
+/*
+-------------------------------------------------------
+End Script
+-------------------------------------------------------
+*/
+
+</script>
+
+</body>
+</html>
